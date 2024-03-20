@@ -371,30 +371,25 @@
                     <img class="w-50 mt-3" src="images/connect.svg" alt="connect with us image">
                 </div>
                 <div class="footer-text col-md-6">
-                    <form action="form.php" method="POST">
-                        <div class="form-floating mb-3">
-                            <input type="name" class="form-control" id="floatingInput" placeholder="name" name="name"
-                                required>
-                            <label class="form-inner" for="floatingInput">Your Name</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com"
-                                name="email" required>
-                            <label class="form-inner" for="floatingInput">e-mail</label>
-                        </div>
-                        <div class="mb-2">
-                            <label class="form-inner" for="exampleFormControlTextarea1" class="form-label"></label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                                placeholder="Your Message" name="message" required></textarea>
-                        </div>
-                        <!-- Honeypot Field -->
-                        <div style="display: none;">
-                            <label for="honeypot">Leave this field empty:</label>
-                            <input type="text" id="honeypot" name="honeypot">
-                        </div>
-                        <button class="btn btn3 mt-3 w-100" type="submit">Send</button>
+                    <form id="contact-form" action="form.php" method="POST">
+    <div class="form-floating mb-3">
+        <input type="name" class="form-control" id="name" placeholder="name" name="name" required>
+        <label class="form-inner" for="name">Your Name</label>
+    </div>
+    <div class="form-floating">
+        <input type="email" class="form-control" id="email" placeholder="email@example.com" name="email" required>
+        <label class="form-inner" for="email">e-mail</label>
+    </div>
+    <div class="mb-2">
+        <textarea class="form-control" id="message" rows="6" placeholder="Your Message" name="message" required></textarea>
+    </div>
 
-                    </form>
+    <!-- Honeypot field -->
+    <label class="honeypot-field" for="honeypot" style="display:none;">Leave this field empty:</label>
+    <input type="text" id="honeypot" name="honeypot" class="honeypot-field">
+
+    <button class="btn btn3 mt-3 w-100" type="submit">Send</button>
+</form>
                 </div>
 
             </div>
