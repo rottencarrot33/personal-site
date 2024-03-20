@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="dark">
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <div class="container ">
+            <div class="navlogo ms-0 ms-md-5"><a href="index.html"><img alt="logo"></a></div>
+            <div class="dark-toggler-smscrn">
+                <a id="light-smscrn"><img class="darkmode-img dark-mode" src="images/light-switch-on-svgrepo-com.svg" alt=""></a>
+                <a id="dark-smscrn"><img class="darkmode-img light-mode" src="images/light-switch-off-svgrepo-com.svg" alt=""></a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </a>
+            <div class="navbar-links animationEffect">
+                <ul>
+                    <div class="dark-toggler-lgscrn">
+                        <a id="light-lgscrn"><img class="darkmode-img dark-mode" src="images/light-switch-on-svgrepo-com.svg" alt=""></a>
+                        <a id="dark-lgscrn"><img class="darkmode-img light-mode" src="images/light-switch-off-svgrepo-com.svg" alt=""></a>
+                    </div>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about-nav">About</a></li>
+                    <li><a href="#portfolio-nav">Portfolio</a></li>
+                    <li><a href="#contact-nav">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="head-main">
+            <div class="row text-start">
+                
+                <div class="head-txt col-12 col-lg-6 me-xl-5">
+                    <h1>Building better websites for better business</h1>
+                    <h5 class="mt-4">We understand that every business is unique, and that's why we take a personalized
+                        approach to web development, working closely with you to understand your needs and goals, and
+                        delivering customized solutions that exceed your expectations.</h5>
+                </div>
+                <div class="head-img col-12 col-lg-4">
+                    <img class="jiggling" src="images/header-img.png" data-speed="9" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Services -->
+
+    <section id="services">
+
+        <div class="services main">
+            <div class="services-title text-center mb-5">
+                <h2 class="fw-bold display-4"><span>What</span> we offer </h2>
+                <h5 class="mt-4">At netorbyte, we offer a comprehensive range of services to help you
+                    establish and grow your online presence. From handcoded websites to responsive design, we specialize
+                    in creating tailored solutions that meet your unique business needs. We also provides ongoing
+                    support and maintenance to ensure your website is always up-to-date,
+                    secure, and performing at its best. Trust us to help you succeed online.</h5>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="services cards col-12 col-lg-4 mt-lg-4 mt-5">
+                        <div class="card card-services text-center py-4 card1">
+                            <img class="mb-2" src="images/responsive-svgrepo-com.svg" alt="">
+                            <h3>Responsive Websites</h3>
+                            <p>We create modern and user-friendly websites that look great on all devices.</p>
+                        </div>
+                        <div class="card card-services text-center mt-lg-4 mt-4 py-4">
+                            <img class="mb-2" src="images/magic-wand-wizard-svgrepo-com.svg" alt="">
+                            <h3>Unique Designing</h3>
+                            <p>We create custom designs that reflect your brand and stand out from the competition.</p>
+                        </div>
+                    </div>
+                    <div class="services cards col-12 col-lg-4 mt-4">
+                        <div class="card card-services text-center py-4">
+                            <img class="mb-2" src="images/megaphone-svgrepo-com.svg" alt="">
+                            <h3>Digital Marketing</h3>
+                            <p>We help you reach your target audience through effective online advertising campaigns.
+                            </p>
+                        </div>
+                        <div class="card card-services text-center mt-lg-4 mt-4 py-4">
+                            <img class="mb-2" src="images/security-padlock-svgrepo-com.svg" alt="">
+                            <h3>Securing Your Data</h3>
+                            <p>We ensure your website and customer data is protected from potential threats and
+                                breaches.</p>
+                        </div>
+                    </div>
+                    <div class="services cards col-12 col-lg-4 mt-4">
+                        <div class="card card-services text-center py-4">
+                            <img class="mb-2" src="images/seo-search-svgrepo-com.svg" alt="">
+                            <h3>SEO Services</h3>
+                            <p>We optimize your website for search engines, so you can rank higher and attract more
+                                traffic.</p>
+                        </div>
+                        <div class="card card-services text-center mt-lg-4 mt-4 py-4">
+                            <img class="mb-2" src="images/laptop-internet-svgrepo-com.svg" alt="">
+                            <h3>Support and Updates</h3>
+                            <p>We provide ongoing support and updates to ensure your website runs smoothly and stays
+                                up-to-date.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="row">
+        <hr class="mx-auto" style="width:4%">
+    </div>
+
+
+    <!-- Choose Us -->
+
+    <section id="choose-us">
+        <div class="choose-us-title text-center mb-5">
+            <h2 class="fw-bold display-4"><span>Why</span> Choose Us</h2>
+            <h5 class="mt-4">We understand that your website is the digital face of your
+                business. That's why we are dedicated to delivering exceptional web development services that are
+                tailored to meet your business needs. Our goal is to utilizes the latest tools and technologies to
+                create responsive, user-friendly, and visually appealing websites that drive conversions and maximize
+                your online presence. Trust us to provide you with personalized attention, clear communication, and
+                outstanding results. Choose us for your next web development project and experience the power of a
+                website that truly represents your brand.</h5>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="choose-img col-12 col-lg-5">
+                    <img src="images/web-dev.svg" alt="">
+                </div>
+                <div class="choose-text col-12 col-lg-7 ps-lg-5 pt-xl-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa-solid fa-circle-check fa-2x"></i>
+                                    <h3 class="fw-bold">Unlimited Edits</h3>
+                                    <p>Request any change you want at anytime and it will be done in the same day.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa-solid fa-circle-check fa-2x"></i>
+                                    <h3 class="fw-bold">Easy To Reach</h3>
+                                    <p>Requesting your new website for your business was never that fast and easy.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa-solid fa-circle-check fa-2x"></i>
+                                    <h3 class="fw-bold">Hosting and Domain</h3>
+                                    <p>We will take care of naming and hosting your website. All you have to do is pick
+                                        a name for it.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa-solid fa-circle-check fa-2x"></i>
+                                    <h3 class="fw-bold">Google Analytics</h3>
+                                    <p>Do you want to know your website's traffic and where it comes from? We will
+                                        monitor it for you.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="row">
+        <hr id="about-nav" class="mx-auto hr-choose-us" style="width:4%">
+    </div>
+
+
+
+    <!-- About Us -->
+
+    <section id="about">
+        <div class="about-title text-center mb-5">
+            <h2 class="fw-bold display-4"><span>About</span> Us</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="about-text col-12 col-md-7 mx-auto">
+                    <h3 class="fw-bold text-center mb-3">Some words <span>about me</span></h3>
+                    <p>I'm Sakis, a web developer with a background in hospitality management. After rising to the
+                        role of hotel manager, I realized that my true passion was in the technology field. At the age
+                        of 29, I made the bold decision to pivot my career and pursue web development. <br>
+
+                        Since then, I've acquired a deep knowledge of the latest web development tools and trends. I'm
+                        dedicated to creating cutting-edge websites that deliver measurable results for my clients. <br>
+
+                        Outside of work, I enjoy spending time with my family and staying up to date on the latest
+                        technology trends. I'm always seeking new challenges and opportunities to expand my skills and
+                        knowledge. Whether you're looking to launch a new website or improving your current one, I
+                        have the expertise and skills to help you achieve your goals.</p>
+                </div>
+                <div class="about-img col-12 col-md-5 text-center">
+                    <img class="rounded" src="images/about-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="row">
+        <hr id="portfolio-nav" class="mx-auto" style="width:4%">
+    </div>
+
+
+
+    <!--Portfolio-->
+    <section id="portfolio">
+        <div class="portfolio-title text-center mb-5">
+            <h2 class="fw-bold display-4">Our <span>Portfolio</span></h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 card1">
+                    <div class="card card-portfolio mb-3 p-4">
+                        <div class="card-img text-center">
+                            <img src="images/droffice.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h5 class="fw-bold mt-4">Dr. Tsigka & Dr. Agrafiotis</h5>
+                            <p class=" mt-2">Thessaloniki, GR</p>
+                        </div>
+                        <div class="btn my-3">Visit Site</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card card-portfolio mb-3 p-4">
+                        <div class="card-img text-center">
+                            <img src="images/scubacorfu.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h5 class="fw-bold mt-4">Poseidon Diving Center</h5>
+                            <p class=" mt-2">Corfu, GR</p>
+                        </div>
+                        <div class="btn my-3">Visit Site</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card card-portfolio mb-3 p-4">
+                        <div class="card-img text-center">
+                            <img src="images/scubacorfu.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h5 class="fw-bold mt-4">Ermones Villas Rental</h5>
+                            <p class=" mt-2">Corfu, GR</p>
+                        </div>
+                        <div class="btn my-3">Visit Site</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <hr id="contact-nav" class="mx-auto" style="width:4%">
+    </div>
+
+
+    <!--contact us-->
+    <section id="contact">
+        <div class="about-title text-center mb-5">
+            <h2 class="fw-bold display-4">Get in <span>Touch</span></h2>
+            <h5 class="mt-4">We're here to help! If you have any questions or want to know about the pricing,
+                just send us a message using the contact form. We'll get back to you as soon as possible.</h5>
+        </div>
+
+        <div class="container pt-3">
+            <div class="row">
+                <div class="footer-contact col-md-6 text-center">
+                    <h2>Let's <span>Connect</span></h2>
+                    <p class="mt-4">
+                        <i style="padding-right: 10px;" class="fa-solid fa-envelope"></i> <a
+                        href="mailto:dev@netorbyte.com">dev@netorbyte.com</a>
+                    </p>
+                    <p class="mt-4">
+                        <i style="padding-right: 10px;" class="fa-solid fa-phone"></i><a href="tel:00306982964405">+30 698 2964 405</a>
+                    </p>
+                    <img class="w-50" src="images/connect.svg" alt="">
+                </div>
+                <div class="footer-text col-md-6">
+                    
+
+<form id="contact-form" action="form.php" method="POST">
+    <div class="form-floating mb-3">
+        <input type="name" class="form-control" id="name" placeholder="name" name="name" required>
+        <label class="form-inner" for="name">Your Name</label>
+    </div>
+    <div class="form-floating">
+        <input type="email" class="form-control" id="email" placeholder="email@example.com" name="email" required>
+        <label class="form-inner" for="email">e-mail</label>
+    </div>
+    <div class="mb-2">
+        <textarea class="form-control" id="message" rows="6" placeholder="Your Message" name="message" required></textarea>
+    </div>
+
+    <!-- Honeypot field -->
+    <label class="honeypot-field" for="honeypot" style="display:none;>Leave this field empty:</label>
+    <input type="text" id="honeypot" name="honeypot" class="honeypot-field">
+
+    <button class="btn btn3 mt-3 w-100" type="submit">Send</button>
+</form>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <div class="back-to-top">
+        <a href="#"><img src="images/top-circle-svgrepo-com.svg" alt=""></a>
+    </div>
+
+    <footer>
+        <div class="col-12 text-center mt-5">
+            <p class="web-dev mt-0">Developed by <a href="https://netorbyte.com"><span
+                        class="web-dev-name">netorbyte </span></a><span class="divider">|</span> <a style="color: var(--green-neon-clr);"
+                    href="mailto:dev@netorbyte.com" class="web-dev-email">dev@netorbyte.com</a></p>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
