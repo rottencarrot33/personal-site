@@ -116,6 +116,22 @@ if (body.classList.contains('dark')) {
 }
 
 
+// honeypot
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function(event) {
+            var honeypotField = document.getElementById("honeypot");
+
+            if (honeypotField.value !== "") {
+                event.preventDefault();
+                alert("Spam submission detected. Please try again.");
+            }
+        });
+    });
+</script>
 
 
 
